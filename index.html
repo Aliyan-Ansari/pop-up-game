@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log In</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pop Up Game</a>
+          
+          <div class="" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <button type="button" class="btn btn-outline-dark" id="signInWithGoogle" >Sign in With Google</button>
+              </li>
+            </ul> 
+          </div>
+        </div>
+      </nav>
+      <div id="login" class="container my-5">
+        <h1 class=" text-center">Login</h1>
+       
+        <form id="signInForm" class="container">
+            <div id="wrong"></div>
+            <div class="mb-3 my-5">
+                <label for="email" class="form-label">Email*</label>
+                <input type="email" class="bottomLine form-control" autocomplete="" required name="email" id="email"
+                placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password*</label>
+                <input type="password" required class="bottomLine form-control" autocomplete="" name="password"
+                placeholder="********" id="password" />
+            </div>
+            <div class="my-5 btn">
+                <button type="submit" id="sign-in" class="btn btn-danger">Sign in</button>
+                <a href="signup.html"><button type="button" class="btn btn-dark">Sign up</button></a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>    
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="auth.js" ></script>
+</body>
+
+</html>
